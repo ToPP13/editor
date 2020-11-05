@@ -6,12 +6,18 @@
 #include <vector>
 #include <map>
 
-#include "../include/lib.h"
+#include "../include/model.h"
+#include "../include/view.h"
+#include "../include/controller.h"
 
 
 
 
 int main(int, char *[]) {
 
+    Model model;
+    View window(&model);
+    Controller controller(&model);
+    controller.run();
     return 0;
 }

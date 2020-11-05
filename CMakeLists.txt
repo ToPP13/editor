@@ -40,7 +40,7 @@ source_group("include" FILES ${MAIN_INCLUDES})
 configure_file(version.h.in version.h)
 
 # Add an executable to the project using the specified source files.
-add_executable(editor_cli src/editor.cpp)
+add_executable(editor_cli src/editor.cpp include/controller.h include/view.h include/model.h include/observer.h include/observable.h include/idrawablefigure.h include/rect.h include/triangle.h include/circle.h include/image.h include/point.h)
 
 # Add a library to the project using the specified source files.
 add_library(editor src/lib.cpp)
