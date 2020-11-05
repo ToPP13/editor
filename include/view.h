@@ -27,10 +27,7 @@ public:
 //        }
         show(image_to_draw);
     }
-    void show(const Image & img)
-    {
-
-    }
+    void show(const Image & img);
     virtual void update(){};
 private:
     Image _img;
